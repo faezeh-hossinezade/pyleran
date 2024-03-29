@@ -1,0 +1,5 @@
+series,The Peripheral,Michael Roskam,8.1,https://www.youtube.com/watch?v=aH1FOkJys3Y,148,Taron Egerton|Paul Walter|Hauser Greg Kinnear|Sepideh Moafi,2021,8,---
+clip,The Stepford Wives,Frank Oz,5.3,https://www.youtube.com/watch?v=SuAADocdVn0,150,Nicole Kidman|Bette Midler|Matthew Broderick,2004,1,comedy
+film,fight club,David Fincher,8.8,https://www.youtube.com/watch?v=qtRKdVHc-cE,147,Brad Pitt|Edward Norton|Meat Loaf,1999,1,---
+documentary,The Territory,Alex Pritz,7.6,https://www.youtube.com/watch?v=wL9wvdbk7A4,146,Neidinha Bandeira|Bitaté Uru|Eu Wau Wau,2022,1,---
+
