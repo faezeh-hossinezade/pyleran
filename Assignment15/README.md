@@ -12,6 +12,7 @@ Snake Game: An attractive game for entertainment and leisure.
 Tip: If the snake hits its own body, you lose.
 
 ## How to Run
+Execute this command in terminal: 
 ```
-Execute this command in terminal: python main.py
+python main.py
 ```
