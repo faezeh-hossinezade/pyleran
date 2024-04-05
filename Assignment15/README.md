@@ -10,3 +10,8 @@ Enviroment of Game:
 ![alt text](<output/Screenshot 2024-04-05 002622.jpg>)
 
 Tip: If the snake hits its own body, you lose.
+
+## How to Install
+```
+Execute this command in terminal: python main.py
+```
