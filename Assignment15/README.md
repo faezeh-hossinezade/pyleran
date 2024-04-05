@@ -2,7 +2,7 @@
 
 Snake Game: An attractive game for entertainment and leisure.
 
-Enviroment of Game:
+### Enviroment of Game:
 
 
 
@@ -11,7 +11,7 @@ Enviroment of Game:
 
 Tip: If the snake hits its own body, you lose.
 
-## How to Install
+## How to Run
 ```
 Execute this command in terminal: python main.py
 ```
