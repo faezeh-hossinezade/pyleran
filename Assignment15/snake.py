@@ -28,6 +28,21 @@ class Snake(arcade.Sprite):
         self.score=0
         self.body=[]
         
+        
+    def change_direction(self, symbol):
+        if symbol == arcade.key.UP:
+            self.change_y = 1
+            self.change_x = 0
+        elif symbol == arcade.key.DOWN:
+            self.change_y = -1
+            self.change_x = 0
+        elif symbol == arcade.key.LEFT:
+            self.change_x = -1
+            self.change_y = 0
+        elif symbol == arcade.key.RIGHT:
+            self.change_x = 1
+            self.change_y = 0
+        
             
     def draw(self):
         arcade.draw_rectangle_filled(
