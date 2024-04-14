@@ -6,13 +6,13 @@ from snake import Snake
 
 class Game(arcade.Window):
     def __init__(self):
-        super().__init__(width=500, height=500, title="Snake Game 🐍")
+        super().__init__(width=500, height=500, title="Snake Game 2024 🐍")
         arcade.set_background_color(arcade.color.KHAKI)
-        self.snake = Snake(self)
         self.apple=Apple(self)
         self.avocado=Avocado(self)
         self.poo=Poo(self)
-        self.foods = [Apple(self),Avocado(self), Poo(self)]
+        self.snake = Snake(self)
+        self.foods = [self.apple,self.avocado, self.poo]
         self.game_over = False
         self.nearest_object = get_nearest_object(self.snake, self.foods[0], self.foods[1])
 
@@ -27,13 +27,33 @@ class Game(arcade.Window):
             self.snake.draw()
             for food in self.foods:
                 food.draw()
-            # self.apple.draw()
-            # self.avocado.draw()
-            # self.poo.draw()
+                del food
         arcade.finish_render()
 
     def on_update(self, delta_time: float):
         # print(self.nearest_object)
+        if arcade.check_for_collision(self.snake, self.apple):
+            #self.foods.clear()
+            self.foods.clear()
+            self.foods = [self.apple,self.avocado, self.poo]
+            #self.snake.score += 1
+            #self.foods.append(Apple(self)) 
+        elif arcade.check_for_collision(self.snake, self.avocado):
+            #del self.foods[1]
+            #self.foods.pop(1)
+            self.foods.clear()
+            self.foods = [self.apple,self.avocado, self.poo]
+            #self.snake.score += 2
+            #self.avocado = Avocado(self)
+            #self.foods.append(Avocado(self)) 
+        elif arcade.check_for_collision(self.snake, self.poo):
+            #self.foods.pop(2)
+            self.foods.clear()
+            self.foods = [self.apple,self.avocado, self.poo]
+            #self.snake.score -= 1
+            #self.poo = Poo(self)
+            #self.foods.append(Poo(self)) 
+            
         food_coordinates = move_to_food(self.snake, self.nearest_object)
         # print(food_coordinates)
         change_move_direction(self.snake, food_coordinates)
@@ -46,6 +66,7 @@ class Game(arcade.Window):
             if arcade.check_for_collision(food, self.snake):
                 self.foods = self.snake.eat(food, self.foods)
                 self.nearest_object = get_nearest_object(self.snake, self.foods[0], self.foods[1])
+                
 
 
 
@@ -68,7 +89,11 @@ def move_to_food(snake: arcade.Sprite, food: arcade.Sprite):
 
 def change_move_direction(snake: Snake, direction):
     if direction is None:
+        arcade.draw_text("Game Over :|", snake.width // 2, snake.height // 2,
+                             arcade.color.RED, font_size=30, anchor_x="center")
         print("None")
+        #exit(20)
+
     else:
         if direction[0] == "x":
             if direction[1] > 0:

@@ -31,8 +31,6 @@ class Game(arcade.Window):
             self.avocado.draw()
             self.poo.draw()
 
-                
-                
         arcade.finish_render()
         
     def on_key_press(self, symbol: int, modifiers: int):

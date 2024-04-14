@@ -24,7 +24,7 @@ class Snake(arcade.Sprite):
         self.color2 = arcade.color.BROWN
         self.change_x=0
         self.change_y=0
-        self.speed=4
+        self.speed=1
         self.score=0
         self.body=[]
         
