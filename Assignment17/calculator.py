@@ -61,12 +61,13 @@ def ac():
 
 
 def percent():
-    global num1, num2 , outcome, num3
+    global num1, num2 , outcome
     global operator
     # operator = str("%")
     operator = "%"
     num1 = mywindow.box.text()
-    num3=float(num1)
+    # print (num1)
+    num2=float(num1)
     mywindow.box.setText("")    
     # num2=float(num1)
     # num2/= float(100)
@@ -151,9 +152,7 @@ def result(outcome):
             
     elif operator == "%":
         num2=float(100.0)
-        
-        outcome = num3/num2
-        
+        outcome = float(num1) / float(num2)
         mywindow.box.setText(str(outcome))
             
     elif operator == "+" :
@@ -199,7 +198,6 @@ mywindow.btn_dot.clicked.connect(partial(num, "."))
 
 # operators:
 mywindow.sub.clicked.connect(sub)
-mywindow.percent.clicked.connect(sub)
 mywindow.sum.clicked.connect(sum)
 mywindow.power.clicked.connect(mult)
 mywindow.divide.clicked.connect(divide)

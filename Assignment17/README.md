@@ -30,7 +30,7 @@ Other math function like log and sqrt and percent: Feature 4;
 ## Requirements ##
 
 ```bash
-pip pip install PySide6
+ pip install PySide6
 ```
 
 ## How to run
