@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="OUTPUT\Screenshot 2024-05-08 193205.jpg" alt="Tic Tac Toe" />
+  <img src="OUTPUT\Screenshot 2024-05-23 183633.jpg" alt="Tic Tac Toe" />
 
   &#xa0;
 
