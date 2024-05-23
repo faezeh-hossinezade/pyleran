@@ -13,8 +13,8 @@ main_window = loader.load("main_window.ui")
 main_window.show()
 
 player = "X"
-win_count_X = 0
-win_count_O = 0
+count_X = 0
+count_O = 0
 game_mode = 2
 
 lcd_X = main_window.findChild(QLCDNumber, "lcd_X")
@@ -48,11 +48,11 @@ def new_game():
 
 def reset():
     new_game()
-    global win_count_O, win_count_X
-    win_count_X = 0
-    win_count_O = 0
-    update_lcd_value_X(win_count_X)
-    update_lcd_value_O(win_count_O)
+    global count_O, count_X
+    count_X = 0
+    count_O = 0
+    update_lcd_value_X(count_X)
+    update_lcd_value_O(count_O)
 
 def update_lcd_value_X(new_value):
     lcd_X.display(new_value)
@@ -62,7 +62,7 @@ def update_lcd_value_O(new_value):
 
 
 def check_game():
-    global winner, win_count_X, win_count_O 
+    global winner, count_X, count_O 
     winner = None
     if cells[0][0].text() == cells[1][1].text() == cells[2][2].text() != "":
         winner = cells[0][0].text()
@@ -92,11 +92,11 @@ def check_game():
         new_game()
 
         if winner == "X":
-            win_count_X += 1
-            update_lcd_value_X(win_count_X)
+            count_X += 1
+            update_lcd_value_X(count_X)
         elif winner == "O":
-            win_count_O += 1
-            update_lcd_value_O(win_count_O)
+            count_O += 1
+            update_lcd_value_O(count_O)
             
 
 
