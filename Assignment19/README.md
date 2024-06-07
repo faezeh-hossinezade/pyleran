@@ -50,7 +50,6 @@ First Project: puzzle15\
 second Project: Comming Soon\
 Third Project: Comming Soon\
 Fourth Project: Comming Soon\
-Fifth Project: Comming Soon
 <!-- 
 ## :sparkles: Features ##
 
