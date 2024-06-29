@@ -46,12 +46,12 @@
 
 ## About ##
 
-First Project: puzzle15\
-second Project: guess number\
+First Project: puzzle15<br />
+second Project: guess number<br />
 <img src="output\Screenshot 2024-06-29 193004.jpg" alt="Assignment19" />
-Third Project: pass generator\
+Third Project: pass generator<br />
 <img src="output\Screenshot 2024-06-29 193032.jpg" alt="Assignment19" />
-Fourth Project: line break removal\
+Fourth Project: line break removal<br />
 <img src="output\Screenshot 2024-06-29 192814.jpg" alt="Assignment19" />
 <!-- 
 ## :sparkles: Features ##
