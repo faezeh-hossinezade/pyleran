@@ -1,0 +1,4 @@
+ pip install PySide6
+ pip install googletrans
+ pip install textblob
+ pip install password_generator 

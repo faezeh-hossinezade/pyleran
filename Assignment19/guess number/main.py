@@ -1,7 +1,7 @@
 import sys
 import random
 from PySide6.QtWidgets import QApplication,QMainWindow,QMessageBox
-from ui_mainwindow import Ui_MainWindow
+from puzzle15.ui_mainwindow import Ui_MainWindow
 
 Guess_Cnt=1
 Computer_Num=random.randint(1,100)

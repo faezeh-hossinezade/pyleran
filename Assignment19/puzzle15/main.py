@@ -19,7 +19,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow,QMessageBox
 from PySide6.QtCore import QFile
-from ui_mainwindow import Ui_MainWindow
+from puzzle15.ui_mainwindow import Ui_MainWindow
 import random
 from functools import partial
 my_numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]

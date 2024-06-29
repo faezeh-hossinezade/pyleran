@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox
-from ui_mainwindow import Ui_MainWindow
+from puzzle15.ui_mainwindow import Ui_MainWindow
 from functools import partial
 
 class MainWindow(QMainWindow):

@@ -79,10 +79,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 ## Requirements ##
 
 ```bash
- pip install PySide6
- pip install googletrans
- pip install textblob
- pip install password_generator 
+requirements.txt
 ```
 
 ## How to run
