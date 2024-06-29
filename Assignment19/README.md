@@ -47,9 +47,12 @@
 ## About ##
 
 First Project: puzzle15\
-second Project: Comming Soon\
-Third Project: Comming Soon\
-Fourth Project: Comming Soon\
+second Project: guess number\
+<img src="output\Screenshot 2024-06-29 193004.jpg" alt="Assignment19" />
+Third Project: pass generator\
+<img src="output\Screenshot 2024-06-29 193032.jpg" alt="Assignment19" />
+Fourth Project: line break removal\
+<img src="output\Screenshot 2024-06-29 192814.jpg" alt="Assignment19" />
 <!-- 
 ## :sparkles: Features ##
 
@@ -71,17 +74,23 @@ The following tools were used in this project:
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed. -->
 
-## :checkered_flag: Starting ##
+<!-- ## :checkered_flag: Starting ## -->
 
 ## Requirements ##
 
 ```bash
  pip install PySide6
+ pip install googletrans
+ pip install textblob
+ pip install password_generator 
 ```
 
 ## How to run
 ```bash
-python main.py
+python main.py #puzzle15
+python main.py #guess number
+python main.py #pass generator
+python line_break_removal_tool.py #line break removal
 ```
 <!-- 
 # The server will initialize in the <http://localhost:3000>
