@@ -79,7 +79,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 ## Requirements ##
 
 ```bash
-requirements.txt
+pip install -r requirements.txt
 ```
 
 ## How to run
