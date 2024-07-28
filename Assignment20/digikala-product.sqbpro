@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="digikala-product.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="557"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Products" custom_title="0" dock_id="2" table="4,8:mainProducts"/><dock_state state="000000ff00000000fd0000000100000002000002480000020bfc0100000001fc00000000000002480000011800fffffffa000000010100000002fb000000160064006f0063006b00420072006f00770073006500310000000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000011800ffffff000002480000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="29"/><column index="2" value="54"/><column index="3" value="62"/><column index="4" value="52"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Products" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="70"/><column index="2" value="148"/><column index="3" value="70"/><column index="4" value="41"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">INSERT INTO products(Id,Name,Price,Count)
+VALUES
+(1787075,'porzkir','850000',0),
+(13358923,'bigoodi','35000',4),
+(2365593,'halghe taxeini','37500',2),
+(5989735,'dastband','18780',300),
+(8828209,'shane mo zanane','189000',3),
+(8111438,'service ghazakhori','790000',100),
+(1787072,'tarazoo digital','399000',0);
+
+SELECT  * from products
+where count&gt;0;
+
+
+INSERT INTO Customers(Id,Name,city,Country)
+VALUES
+(1,'faeze','mashhad','Iran'),
+(2,'nafise','tehran','Iran'),
+(3,'fateme','quchan','Iran'),
+(4,'hoda','bojnord','Iran'),
+(1010,'ana','torento','canada');
+
+
+DELETE FROM Customers 
+WHERE not Country='Iran';
+
+UPDATE products
+SET Price =Price*0.8;
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
