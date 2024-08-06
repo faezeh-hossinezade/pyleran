@@ -1,0 +1,10 @@
+INSERT INTO products(id,name,count,price) VALUES(54,'iphone13 pro max  256',20,78000000);
+INSERT INTO products(id,name,count,price) VALUES(76,'iphone13 pro 256',20,65000000);
+INSERT INTO products(id,name,count,price) VALUES(86,'iphone11 128',20,48000000);
+INSERT INTO products(id,name,count,price) VALUES(96,'iphone11 256',20,52000000);
+INSERT INTO products(id,name,count,price) VALUES(106,'iphone12 128',20,66000000);
+INSERT INTO products(id,name,count,price) VALUES(116,'iphone12 pro 256',20,49000000);
+INSERT INTO products(id,name,count,price) VALUES(126,'iphone12 pro max 128',20,60000000);
+INSERT INTO products(id,name,count,price) VALUES(136,'iphone xs 128',20,25000000);
+INSERT INTO products(id,name,count,price) VALUES(146,'iphone13 Irani 128',20,5000000);
+INSERT INTO products(id,name,count,price) VALUES(156,'iphone13 pro max Sheikh 2560',20,2000000);
