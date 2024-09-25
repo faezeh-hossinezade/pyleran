@@ -12,11 +12,11 @@ Run banana_and_apple_war.ipynb
 A virtual data set is created and analyzed.
 ### How to Run
 ```bash
-Run balloons_and_melons.ipynb.ipynb
+Run balloons_and_melons.ipynb
 ```
 ## Data Science Project on Area and Population of California Cities
 In this project the size and colors of points are used to indicate the area and populations of California cities.
 ### How to Run
 ```bash
-Run california_cities.ipynb.ipynb
+Run california_cities.ipynb
 ```
